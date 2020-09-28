@@ -1,0 +1,88 @@
+/*Selector de etiqueta*/
+section {
+  padding: 10px;
+}
+
+footer {
+  background: #264653;
+}
+
+/*Selector compuesto: Selector de etiqueta + Selector de clase*/
+nav .nav-list {
+  list-style: none;
+  background: #264653;
+  padding: 10px 15px;
+}
+
+nav .nav-list .list-item .item-link {
+  text-decoration: none;
+  color: white;
+}
+
+/*Selector de atributo*/
+section [src$=".jpg"] {
+  width: 250px;
+  height: 250px;
+}
+
+section [src*=".mp4"] {
+  width: 350px;
+  height: 350px;
+}
+
+h3[class="footer-title"] {
+  font-size: 2em;
+}
+
+address[title] {
+  padding: 10px;
+  background: cyan;
+}
+
+/*Pseudoclases*/
+nav .nav-list .list-item:hover {
+  background: #2a9d8f;
+}
+
+header:first-child {
+  background: #e9c46a;
+}
+
+section:nth-child(odd) {
+  background: #f4a261;
+}
+
+section:nth-child(even) {
+  background: #e76f51;
+}
+
+menu:first-of-type {
+  list-style: none;
+}
+
+/*Pseudoelementos*/
+footer ::after {
+  color: wheat;
+}
+
+.fb-link::before {
+  content: url(/images/icons/facebook.png);
+  width: 300px;
+}
+.fb-link::after {
+  content: "Facebook";
+}
+
+.ig-link::before {
+  content: url(/images/icons/instagram.png);
+}
+.ig-link::after {
+  content: "Instagram";
+}
+
+.tw-link::before {
+  content: url(/images/icons/twitter.png);
+}
+.tw-link::after {
+  content: "Twitter";
+}
